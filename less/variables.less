@@ -1,0 +1,208 @@
+
+//
+// Variables
+// ----------------------
+
+@gray: #333;
+@gray-light: #aaa;
+@gray-lighter: #eee;
+@space: 40px;
+@blue: #428bca;
+@blue-dark: darken(@blue, 5%);
+
+
+
+//
+// Colors
+//
+
+// Global 
+@body-bg:                   #FFF;
+@text-color:                #555;
+
+
+// Links
+@link-color:                #35373c;
+@link-hover-color:          #44464c;
+
+
+// Pallets
+@gray:                      #AAA;
+@gray-light:                #CCC;
+@inverse:                   #FFF;
+@primary:                   #a7cb73;
+@primary-hover:             #92B660;
+@secondary:                 #e74c3c;
+@secondary-hover:           #D5483A;
+
+// Messages
+@success:                   #dff0d8;
+@success-text:              #3c763d;
+@warning:                   #fcf8e3;
+@warning-text:              #8a6d3b;
+@error:                     #f2dede;
+@error-text:                #a94442;
+@info:                      #d9edf7;
+@info-text:                 #31708f;
+
+
+//
+// Typo
+//
+
+@font-family-base:          "Open Sans", Helvetica, Arial, sans-serif;
+@font-family-monospace:     Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-size-base:            15px;
+
+@line-height-base:          1.72222; // 31/18
+@line-height-computed:      floor(@font-size-base * @line-height-base); // ~31px
+
+@headings-font-family:      "Lato", Helvetica, Arial, sans-serif;
+@headings-font-weight:      300;
+@headings-strong-weight:	  600;
+@headings-line-height:      1.1;
+@headings-color:            inherit;
+
+@text-muted:                 @gray-light;
+@abbr-border-color:          @gray-light;
+@headings-small-color:       mix(@primary, @inverse, 12%);
+@blockquote-small-color:     inherit;
+@blockquote-border-color:    mix(@primary, @inverse, 12%);
+@page-header-border-color:   mix(@primary, @inverse, 12%);
+
+
+//
+// Icons
+//
+
+@icon-font-path:            "../fonts/";
+@icon-font-name:            "icons";
+@icon-font-svg-id:          "icons";
+
+@icon-normal:               16px;
+@icon-medium:               18px;
+@icon-large:                32px;
+
+
+//
+// Radius
+//
+
+@border-radius-base:        3px;
+
+
+//
+// Buttons
+//
+
+@btn-font-size-base:         12px;
+
+@btn-line-height-base:       1.4; // ~21px
+
+@btn-social-font-size-base:   floor(@component-font-size-base * 0.867); // ~13px
+@btn-social-line-height-base: 1.077;  // ~14px
+
+@btn-font-weight:            600;
+
+@btn-default-color:          @inverse;
+@btn-disabled-color:		     @gray;
+@btn-default-bg:             @gray-light;
+@btn-hover-bg:               mix(@gray-light, white, 80%);
+@btn-active-bg:              mix(@gray-light, black, 85%);
+
+@btn-primary-hover-bg:       mix(@secondary, white, 80%);
+@btn-primary-active-bg:      mix(@secondary, black, 85%);
+
+
+//
+// Forms
+//
+
+@component-font-size-base:  ceil(@font-size-base * 0.833); // ~15px
+
+@input-font-size-base:      @component-font-size-base;
+@input-font-size-small:     floor(@component-font-size-base * 0.867); // ~13px
+@input-font-size-large:     ceil(@component-font-size-base * 1.133); // ~17px
+@input-font-size-huge:      floor(@component-font-size-base * 1.467); // ~22px
+
+@input-line-height-base:    1.467; // ~22px
+@input-line-height-small:   1.462; // ~19px
+@input-line-height-large:   1.235; // ~21px
+@input-line-height-huge:    1.318; // ~29px
+
+@input-icon-font-size:      ceil(@component-font-size-base * 1.333);  // ~20px       
+
+@input-bg:                  @inverse;
+@input-bg-disabled:         mix(@gray, white, 10%);
+
+@input-height-small:        35px;
+@input-height-base:         41px;
+@input-height-large:        45px;
+@input-height-huge:         53px;
+
+@input-border-radius:       @border-radius-base;
+
+@legend-color:              inherit;
+
+@input-font-size-base:      @component-font-size-base;
+@input-font-size-small:     floor(@component-font-size-base * 0.867); // ~13px
+@input-font-size-large:     ceil(@component-font-size-base * 1.133); // ~17px
+@input-font-size-huge:      floor(@component-font-size-base * 1.467); // ~22px
+
+@input-line-height-base:    1.467; // ~22px
+@input-line-height-small:   1.462; // ~19px
+@input-line-height-large:   1.235; // ~21px
+@input-line-height-huge:    1.318; // ~29px
+
+@input-icon-font-size:      ceil(@component-font-size-base * 1.333);  // ~20px       
+
+@input-bg:                  @inverse;
+@input-bg-disabled:         mix(@gray, white, 10%);
+
+@input-height-small:        35px;
+@input-height-base:         41px;
+@input-height-large:        45px;
+@input-height-huge:         53px;
+
+@input-border-radius:       @border-radius-base;
+
+@legend-color:              inherit;
+
+
+//
+// Form states
+//
+
+@state-success-text:         @success-text;
+@state-success-bg:           @success;
+@state-success-border:       darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:            @info-text;
+@state-info-bg:              @info;
+@state-info-border:          darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:         @warning-text;
+@state-warning-bg:           @warning;
+@state-warning-border:       darken(spin(@state-warning-bg, -10), 5%);
+
+@state-error-text:           @error-text;
+@state-error-bg:             @error;
+@state-error-border:         darken(spin(@state-error-bg, -10), 5%);
+
+
+//
+// Code
+//
+
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;
+
+@kbd-color:                   @inverse;
+@kbd-bg:                      @primary;
+
+@pre-bg:                      @inverse;
+@pre-color:                   inherit;
+@pre-border-color:            mix(@primary, @inverse, 12%);
+@pre-scrollable-max-height:   340px;
+@pre-border-radius:           @border-radius-base;
+

@@ -1,0 +1,97 @@
+//
+// @name: Modal
+// @type: Component
+// @description: Popup 99% in CSS.
+//
+
+.modal {
+  background-color: #FFF;
+  border-radius: @border-radius-base;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+}
+.modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+//
+// Visibility
+//
+.modal-show {
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
+.modal-show ~ .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+//
+// Content
+//
+.modal-header {
+  border-bottom: 1px solid #eee;
+  border-radius: 3px 3px 0 0;
+  padding: 1.5em 2em;
+
+  h3 {
+    margin: 0;  
+    font-size: 1.3em;
+    font-weight: @headings-strong-weight;
+  }
+  .modal-close {
+    background: #333;
+    border-radius: 20px;
+    border: 3px solid #FFF;
+    color: #FFF;
+    padding: 3px 8px;
+    line-height: 1;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+
+    .icon-cancel {
+      font-size: 1.4em;
+    }
+  }
+}
+.modal-content {
+  background: #FFF;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+  margin: 0 auto;
+  padding: 2em;
+
+  p {
+    margin-top: 0;
+  }
+  form {
+    margin: 0;
+  }
+  .modal-actions {
+    margin: 30px 0 0;
+    text-align: center;
+  }
+}

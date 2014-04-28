@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FrogUI is a minimal UI for responsive projects">
+    <meta name="author" content="Acamica">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Frog UI</title>
+
+    <!-- External fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="dist/frogui.css" rel="stylesheet">
+    <!-- Documentation styles -->
+    <link href="docs.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <header>
+      
+    </header>
+
+    <main class="grid-12">
+      <section>
+        <h2 class="title"><strong>Tipografía</strong></h2>
+        <div class="content">
+          <strong>Nivel 1</strong>
+          <h1>Encabezado de primer nivel</h1>
+
+          <strong>Nivel 2</strong>
+          <h2>Encabezado de segundo nivel</h2>
+          
+          <strong>Nivel 3</strong>
+          <h3>Encabezado de tercer nivel</h3>
+
+          <strong>Nivel 4</strong>
+          <h4>Encabezado de cuarto nivel</h4>
+
+          <strong>Nivel 5</strong>
+          <h5>Encabezado de quinto nivel</h5>
+
+          <strong>Nivel 6</strong>
+          <h6>Encabezado de sexto nivel</h6>
+
+          <strong>Parrafos</strong>
+          <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+        </div>
+
+        <script src="https://gist.github.com/flycode/eaa279c3af12dd71a0e1.js"></script>
+      </section>
+
+      <section>
+        <h2 class="title"><strong>Botones</strong></h2>
+        <strong>Botonos chicos</strong>
+        <p>
+          <a class="btn btn-primary btn-small" href="">Boton primario</a>
+          <a class="btn btn-secondary btn-small" href="">Boton secundario</a>
+          <a class="btn btn-alert btn-small" href="">Boton alerta</a>
+        </p>
+        <script src="https://gist.github.com/flycode/e13f41b94dc219de8d1c.js"></script>
+        <strong>Botonos medianos</strong>
+        <p>
+          <input type="button" value="Boton primario" class="btn btn-primary">
+          <input type="button" value="Boton secundario" class="btn btn-secondary">
+          <input type="button" value="Boton alerta" class="btn btn-alert">
+        </p>
+        <script src="https://gist.github.com/flycode/c6726bd25354fafc4f2a.js"></script>
+        <strong>Botonos grandes</strong>
+        <p>
+          <a class="btn btn-primary btn-big" href="">Boton primario</a>
+          <a class="btn btn-secondary btn-big" href="">Boton secundario</a>
+          <a class="btn btn-alert btn-big" href="">Boton alerta</a>
+        </p>
+        <script src="https://gist.github.com/flycode/30f92da7f9146a3d646d.js"></script>
+        <strong>Botonos widescreen</strong>
+        <p>
+          <a class="btn btn-primary btn-justified btn-big" href="">Boton justified</a>
+        </p>
+        <script src="https://gist.github.com/flycode/d5ec3b0da2fb5ae1f1ff.js"></script>
+      </section>
+
+      <section>
+        <h2 class="title"><strong>Formularios</strong></h2>
+
+          <form action="foo.php" method="post">
+            <div class="grid-12">
+              <legend>Contáctanos</legend>
+            </div>
+            <div class="grid-4">
+              <input type="text" placeholder="Email" required/>
+            </div>
+            <div class="grid-4">
+              <input type="password" placeholder="Password" required/>
+            </div>
+            <div class="grid-4">
+              <select>
+                <option>Cursos</option>
+                <option>Carreras</option>
+                <option>Otros</option>
+              </select>
+            </div>
+            <div class="grid-12">
+              <textarea placeholder="Ingrese comentarios"></textarea>
+            </div>
+            <div class="grid-12">
+              <label class="check" for="checkbox1">
+                <input type="checkbox" id="checkbox1" checked="checked">
+                <span class="icons">
+                  <span class="icon icon-check"></span>
+                </span>
+                Enviar noticias
+              </label>
+            </div>
+            <div class="grid-12">
+              <label class="radio" for="radio2">
+                <input type="radio" id="radio2" name="radio" checked="checked">
+                <span class="icons">
+                  <span class="icon"></span>
+                </span>
+                Standard
+              </label>
+            </div>
+            <div class="grid-12">
+              <label class="radio" for="radio1">
+                <input type="radio" id="radio1" name="radio">
+                <span class="icons">
+                  <span class="icon"></span>
+                </span>
+                Profesional
+              </label>
+            </div>
+            <div class="grid-12">
+              <p class="form-actions">
+                <input type="submit" class="btn btn-primary" value="Enviar">
+                <a href="#" class="btn btn-secondary">Cancelar</a>
+              </p>
+            </div>
+          </form>
+
+          <script src="https://gist.github.com/flycode/18b1502ea4a7c999ed76.js"></script>
+      </section>
+
+      <section>
+        <h2 class="title"><strong>Cajas</strong></h2>
+        <div class="grid-12" style="background:#f7f7f7; padding:15px 0;">
+          <div class="grid-4">
+           <div class="box">
+             <h3>Caja</h3>
+             <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+           </div>
+          </div>
+          <div class="grid-4">
+           <div class="box shadow">
+             <h3>Caja con sombra</h3>
+             <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+           </div>
+          </div>
+          <div class="grid-4">
+           <div class="box transparent">
+             <h3>Caja transparente</h3>
+             <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+           </div>
+          </div>
+        </div>
+        <script src="https://gist.github.com/flycode/86332437b4d6a2dd7246.js"></script>
+      </section>
+
+      <section>
+        <h2 class="title"><strong>Mensajes</strong></h2>
+        <div class="box box-ok"><strong>Felicitaciones!</strong> Te has registrado en Acamica</div>
+        <script src="https://gist.github.com/flycode/6a78ae4861494175fa26.js"></script>
+        <div class="box box-warn"><strong>Alerta!</strong> Las inscripciones cierran pronto</div>
+        <script src="https://gist.github.com/flycode/7127a5b16cf280acb005.js"></script>
+        <div class="box box-error"><strong>Error!</strong> Hay errores en el formulario</div>
+        <script src="https://gist.github.com/flycode/104e87b3393fa0bc5475.js"></script>
+        <div class="box box-info"><strong>Informacion!</strong> Recuerda completar tus datos</div>
+        <script src="https://gist.github.com/flycode/d39dc417668155c59a53.js"></script>
+      </section>
+
+      <section>
+        <h2 class="title"><strong>Grillas</strong></h2>
+        <div class="row">
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+          <div class="grid-1">.grid-1</div>
+        </div>
+        <div class="row">
+          <div class="grid-3">.grid-3</div>
+          <div class="grid-9">.grid-9</div>
+        </div>
+        <div class="row">
+          <div class="grid-4">.grid-4</div>
+          <div class="grid-8">.grid-8</div>
+        </div>
+        <div class="row">
+          <div class="grid-4">.grid-4</div>
+          <div class="grid-4">.grid-4</div>
+          <div class="grid-4">.grid-4</div>
+        </div>
+        <div class="row">
+          <div class="grid-6">.grid-6</div>
+          <div class="grid-6">.grid-6</div>
+        </div>
+        <script src="https://gist.github.com/flycode/1845655134b99fb4f220.js"></script>
+      </section>
+
+      <section>
+          <h2 class="title"><strong>Iconos</strong></h2>
+          <script src="https://gist.github.com/flycode/5627b327c9d16e0bcfcb.js"></script>
+          <p><strong>Mapeo clases CSS</strong></p>
+          <ul class="glyphs css-mapping">
+            <li>
+              <div class="icon icon-attention"></div>
+              <input type="text" readonly="readonly" value="icon-attention">
+            </li>
+            <li>
+              <div class="icon icon-basket"></div>
+              <input type="text" readonly="readonly" value="icon-basket">
+            </li>
+            <li>
+              <div class="icon icon-calendar"></div>
+              <input type="text" readonly="readonly" value="icon-calendar">
+            </li>
+            <li>
+              <div class="icon icon-bell"></div>
+              <input type="text" readonly="readonly" value="icon-bell">
+            </li>
+            <li>
+              <div class="icon icon-camera"></div>
+              <input type="text" readonly="readonly" value="icon-camera">
+            </li>
+            <li>
+              <div class="icon icon-cancel"></div>
+              <input type="text" readonly="readonly" value="icon-cancel">
+            </li>
+            <li>
+              <div class="icon icon-chart-line"></div>
+              <input type="text" readonly="readonly" value="icon-chart-line">
+            </li>
+            <li>
+              <div class="icon icon-chart-pie"></div>
+              <input type="text" readonly="readonly" value="icon-chart-pie">
+            </li>
+            <li>
+              <div class="icon icon-chat"></div>
+              <input type="text" readonly="readonly" value="icon-chat">
+            </li>
+            <li>
+              <div class="icon icon-check"></div>
+              <input type="text" readonly="readonly" value="icon-check">
+            </li>
+            <li>
+              <div class="icon icon-comment"></div>
+              <input type="text" readonly="readonly" value="icon-comment">
+            </li>
+            <li>
+              <div class="icon icon-cog"></div>
+              <input type="text" readonly="readonly" value="icon-cog">
+            </li>
+            <li>
+              <div class="icon icon-code"></div>
+              <input type="text" readonly="readonly" value="icon-code">
+            </li>
+            <li>
+              <div class="icon icon-heart"></div>
+              <input type="text" readonly="readonly" value="icon-heart">
+            </li>
+            <li>
+              <div class="icon icon-heart-empty"></div>
+              <input type="text" readonly="readonly" value="icon-heart-empty">
+            </li>
+            <li>
+              <div class="icon icon-home"></div>
+              <input type="text" readonly="readonly" value="icon-home">
+            </li>
+            <li>
+              <div class="icon icon-help-circled"></div>
+              <input type="text" readonly="readonly" value="icon-help-circled">
+            </li>
+            <li>
+              <div class="icon icon-info-circled"></div>
+              <input type="text" readonly="readonly" value="icon-info-circled">
+            </li>
+            <li>
+              <div class="icon icon-left-open-big"></div>
+              <input type="text" readonly="readonly" value="icon-left-open-big">
+            </li>
+            <li>
+              <div class="icon icon-down-open-big"></div>
+              <input type="text" readonly="readonly" value="icon-down-open-big">
+            </li>
+            <li>
+              <div class="icon icon-list"></div>
+              <input type="text" readonly="readonly" value="icon-list">
+            </li>
+            <li>
+              <div class="icon icon-menu"></div>
+              <input type="text" readonly="readonly" value="icon-menu">
+            </li>
+            <li>
+              <div class="icon icon-mail"></div>
+              <input type="text" readonly="readonly" value="icon-mail">
+            </li>
+            <li>
+              <div class="icon icon-location"></div>
+              <input type="text" readonly="readonly" value="icon-location">
+            </li>
+            <li>
+              <div class="icon icon-minus-circled"></div>
+              <input type="text" readonly="readonly" value="icon-minus-circled">
+            </li>
+            <li>
+              <div class="icon icon-play"></div>
+              <input type="text" readonly="readonly" value="icon-play">
+            </li>
+            <li>
+              <div class="icon icon-pencil"></div>
+              <input type="text" readonly="readonly" value="icon-pencil">
+            </li>
+            <li>
+              <div class="icon icon-pause"></div>
+              <input type="text" readonly="readonly" value="icon-pause">
+            </li>
+            <li>
+              <div class="icon icon-right-open-big"></div>
+              <input type="text" readonly="readonly" value="icon-right-open-big">
+            </li>
+            <li>
+              <div class="icon icon-resize-full"></div>
+              <input type="text" readonly="readonly" value="icon-resize-full">
+            </li>
+            <li>
+              <div class="icon icon-resize-small"></div>
+              <input type="text" readonly="readonly" value="icon-resize-small">
+            </li>
+            <li>
+              <div class="icon icon-rocket"></div>
+              <input type="text" readonly="readonly" value="icon-rocket">
+            </li>
+            <li>
+              <div class="icon icon-search"></div>
+              <input type="text" readonly="readonly" value="icon-search">
+            </li>
+            <li>
+              <div class="icon icon-up-open-big"></div>
+              <input type="text" readonly="readonly" value="icon-up-open-big">
+            </li>
+            <li>
+              <div class="icon icon-user"></div>
+              <input type="text" readonly="readonly" value="icon-user">
+            </li>
+            <li>
+              <div class="icon icon-twitter"></div>
+              <input type="text" readonly="readonly" value="icon-twitter">
+            </li>
+            <li>
+              <div class="icon icon-facebook"></div>
+              <input type="text" readonly="readonly" value="icon-facebook">
+            </li>
+            <li>
+              <div class="icon icon-gplus"></div>
+              <input type="text" readonly="readonly" value="icon-gplus">
+            </li>
+            <li>
+              <div class="icon icon-users"></div>
+              <input type="text" readonly="readonly" value="icon-users">
+            </li>
+            <li>
+              <div class="icon icon-trophy"></div>
+              <input type="text" readonly="readonly" value="icon-trophy">
+            </li>
+            <li>
+              <div class="icon icon-left"></div>
+              <input type="text" readonly="readonly" value="icon-left">
+            </li>
+            <li>
+              <div class="icon icon-right"></div>
+              <input type="text" readonly="readonly" value="icon-right">
+            </li>
+            <li>
+              <div class="icon icon-up"></div>
+              <input type="text" readonly="readonly" value="icon-up">
+            </li>
+            <li>
+              <div class="icon icon-down"></div>
+              <input type="text" readonly="readonly" value="icon-down">
+            </li>
+            <li>
+              <div class="icon icon-logout"></div>
+              <input type="text" readonly="readonly" value="icon-logout">
+            </li>
+            <li>
+              <div class="icon icon-minus"></div>
+              <input type="text" readonly="readonly" value="icon-minus">
+            </li>
+            <li>
+              <div class="icon icon-plus"></div>
+              <input type="text" readonly="readonly" value="icon-plus">
+            </li>
+            <li>
+              <div class="icon icon-ccw"></div>
+              <input type="text" readonly="readonly" value="icon-ccw">
+            </li>
+            <li>
+              <div class="icon icon-cancel-circled"></div>
+              <input type="text" readonly="readonly" value="icon-cancel-circled">
+            </li>
+          </ul>
+      </section>
+      <section>
+        <h2 class="title"><strong>Componentes</strong></h2>
+
+        <div class="modal-example">
+          <p><strong>Modales</strong></p>
+          <!-- modal -->
+          <button class="modal-trigger btn btn-primary" data-modal="contact">Formulario</button>
+          <div class="modal" id="contact">
+            <div class="modal-header">
+              <h3>Contáctanos</h3>
+            </div>
+            <div class="modal-content">
+              <form action="foo.php" method="post">
+                <p>
+                  <label><strong>Nombre</strong></label>
+                  <input type="text" required>
+                  <label><strong>Email</strong></label>
+                  <input type="text" required>
+                  <label><strong>Comentarios</strong></label>
+                  <textarea placeholder="Ingrese comentarios"></textarea>
+                </p>
+                <p class="modal-actions form-actions">
+                  <input type="submit" class="btn btn-primary" value="Enviar">
+                  <button class="btn btn-secondary modal-close">Cancelar</button>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!-- modal -->
+          <button class="modal-trigger btn btn-primary" data-modal="login">Texto</button>
+          <div class="modal" id="login">
+            <div class="modal-header">
+              <h3>Texto</h3>
+              <button class="modal-close"><i class="icon icon-cancel"></i></button>
+            </div>
+            <div class="modal-content">
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+            </div>
+          </div>
+          <!-- modal -->
+          <button class="modal-trigger btn btn-primary" data-modal="message" data-close="blocked">Mensaje</button>
+          <div class="modal" id="message">
+            <div class="modal-header">
+              <h3>Felicitaciones</h3>
+            </div>
+            <div class="modal-content">
+              <p class="box box-ok"><i class="icon icon-check"></i>&nbsp; Te has registrado en Acamica</p>
+              <p class="modal-actions">
+                <button class="btn btn-primary modal-close">Aceptar</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-overlay"></div><!-- the overlay element -->
+        </div><!-- end modal -->
+        <script src="https://gist.github.com/flycode/a71ae77ad88ec782d5c2.js"></script>
+
+        <div class="accordion-example">
+          <p><strong>Acordeón</strong></p>
+          <div class="accordion">
+            <input type="checkbox" id="radio-option-1" name="accordion-radios" checked>
+            <div class="baffle">
+              <label for="radio-option-1">Accordion</label>
+              <div class="baffle-inner">
+                  Accordions (from 19th century German Akkordion, from Akkord - "musical chord, concord of sounds") are a family of box-shaped musical instruments of the bellows-driven free-reed aerophone type, colloquially referred to as a squeezebox. A person who plays the accordion is called an accordionist. The concertina and bandoneón are related; the harmonium and American reed organ are in the same family.
+              </div>
+            </div>
+            <input type="checkbox" id="radio-option-2" name="accordion-radios">
+            <div class="baffle">
+              <label for="radio-option-2">Construction</label>
+              <div class="baffle-inner">
+                <p>Accordions have many configurations and types. What may be technically possible to do with one accordion could be impossible with another:</p>
+                <ul>
+                    <li>Some accordions are bisonoric, producing different pitches depending on the direction of bellows movement</li>
+                    <li>Others are unisonoric and produce the same pitch in both directions</li>
+                    <li>Some use a chromatic buttonboard for the right-hand manual</li>
+                    <li>Others use a diatonic buttonboard for the right-hand manual</li>
+                    <li>Yet others use a piano-style musical keyboard for the right-hand manual</li>
+                    <li>Some can play in different registers</li>
+                    <li>Craftsmen and technicians may tune the same registers differently, "personalizing" the end result, such as an organ technician might voice a particular instrument</li>
+                </ul>
+              </div>
+            </div>
+            <input type="checkbox" id="radio-option-3" name="accordion-radios">
+            <div class="baffle">
+              <label for="radio-option-3">History</label>
+              <div class="baffle-inner">
+                <p>The accordion is a free reed instrument and is in the same family as other instruments such as the sheng and khaen. The sheng and khaen are both much older than the accordion and this type of reed did inspire the kind of free reeds in use in the accordion as we know it today.</p>
+                <p>The accordion's basic form is believed to have been invented in Berlin in 1822 by Christian Friedrich Ludwig Buschmann, although one instrument has been recently discovered that appears to have been built earlier.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end accordion -->
+        <script src="https://gist.github.com/flycode/76e62378e02123ea8473.js"></script>
+
+      </section>
+    </main>
+
+    <footer>
+      
+    </footer>
+
+    <!-- Your core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="dist/frogui.js"></script>
+    <script type="text/javascript">
+      modal.init();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,119 @@
+/*
+  Buttons
+==================================================== */
+
+.btn {
+  border: none; 
+  border-radius: @border-radius-base;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: @btn-font-weight;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  padding: 17px 35px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: 5px;
+  width: auto;
+  width: 100%;
+  .transition(.5s);
+  -webkit-font-smoothing: antialiased;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: @btn-default-color;
+  }
+
+  &:active,
+  &.active {
+    outline: none;
+    .box-shadow(none);
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: @btn-disabled-color;
+    color: fade(@btn-default-color, 75%);
+    .opacity(.7);
+  }
+
+}
+
+/*
+  Alternate
+==================================================== */
+
+.btn-primary {
+  .button-variant(@inverse, @primary, @primary-hover, @btn-active-bg);
+}
+.btn-alert {
+  .button-variant(@inverse, @secondary, @secondary-hover, @btn-primary-active-bg);
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #CCC;
+  color: #AAA;
+  padding: 16px 26px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+    border-color: #999;
+    color: #777;
+  }
+  &.btn-small {
+    padding: 11px 15px;
+  }
+  &.btn-big {
+    padding: 23px 40px;
+  }
+}
+
+
+/*
+    High resolutions
+==================================================== */
+
+@media (min-width: 768px) {
+
+  .btn {
+    text-align: left;
+    width: auto;
+  }
+
+  .btn-primary.btn-secondary:hover,
+  .btn-primary.btn-secondary:active,
+  .btn-primary.btn-secondary:focus {
+    color: @primary;
+    border-color: @primary;
+  }
+  .btn-alert.btn-secondary:hover,
+  .btn-alert.btn-secondary:active,
+  .btn-alert.btn-secondary:focus {
+    color: @secondary;
+    border-color: @secondary;
+  }
+
+  .btn-small { 
+    padding: 12px 18px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .btn-big { 
+    padding: 25px 50px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .btn-justified {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+}

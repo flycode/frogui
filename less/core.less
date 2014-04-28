@@ -1,0 +1,113 @@
+/*
+  Base
+==================================================== */
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+}
+
+.hide {
+  display: none;
+}
+
+
+/*
+  Links
+==================================================== */
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  .transition(.5s);
+    
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
+/*
+  Lists
+==================================================== */
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-bottom: (@line-height-computed / 2);
+  padding: 0;
+}
+
+// Description Lists
+dl {
+  margin-bottom: @line-height-computed;
+  padding: 0;
+}
+dt,
+dd {
+  line-height: @line-height-base;
+  padding: 0;
+}
+
+/*
+  Misc
+==================================================== */
+
+// Abbreviations and acronyms
+abbr[title],
+abbr[data-original-title] {
+  border-bottom: 1px dotted @abbr-border-color;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 3px solid @blockquote-border-color;
+  padding: 0 0 0 16px;
+  margin: 0 0 @line-height-computed;
+  
+  p {
+    font-size: ceil(@font-size-base * 1.111); // ~20px
+    line-height: 1.55;                        // ~31px
+    font-weight: normal;
+    margin-bottom: .4em;
+  }
+  small,
+  .small {
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    font-style: italic;
+    color: @blockquote-small-color;
+
+    &:before {
+      content: "";
+    }
+  }
+  
+  // Float right with text-align: right
+  &.pull-right {
+    padding-right: 16px;
+    padding-left: 0;
+    border-right: 3px solid @blockquote-border-color;
+    border-left: 0;
+
+    small {
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
+
+// Addresses
+address {
+  margin-bottom: @line-height-computed;
+  line-height: @line-height-base;
+}

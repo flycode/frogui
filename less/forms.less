@@ -1,0 +1,284 @@
+/*
+  Forms
+==================================================== */
+
+form {
+  margin: 0 0 20px;
+  overflow: hidden;
+}
+
+/**
+ * Base
+ */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea,
+select {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: @border-radius-base;
+  /*font-weight: 1.2em;*/
+  margin: 0 0 10px;
+  padding: 15px;
+  width: 100%;
+
+  &:hover {
+    border-color: @gray-light;
+  }
+  &:focus {
+    border-color: @gray;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: 0;
+  }
+   &.has-error  {
+    color: #f05050;
+    border-color: #f05050;
+  }
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: @input-bg-disabled;
+    border-color: mix(@gray, white, 40%);
+    color: mix(@gray, white, 40%);
+    cursor: default;
+    .opacity(.7);
+  }
+}
+
+fieldset {
+  border: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: @line-height-computed / 2;
+  font-size: (@component-font-size-base * 1.6); // ~24px
+  line-height: inherit;
+  color: @legend-color;
+  border-bottom: none;
+}
+
+/**
+ * Search
+ */
+input[type="search"] {
+  -webkit-appearance: none !important; // removes rounded corners for searchfields on iOS
+}
+
+
+/**
+ * Labels
+ */
+label {
+  font-weight: normal;
+  font-size: @component-font-size-base;
+  line-height: 2.4; // ~36px
+  position: relative;
+}
+
+/**
+ * Select
+ */
+select {
+  height: 54px;
+  padding: 13px 25px;
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUBAMAAACHR/vJAAAAKlBMVEUAAACampqenp6pqanr6+vOzs7X19fg4OCbm5uzs7PCwsLz8/PGxsb+/v45GvXAAAAAAXRSTlMAQObYZgAAAFVJREFUGNNjYGBgDWBABYliqHz2Jo0CFAGn9goVZD6LYgKbkAOSwGZRBoZAayQBwwMMDDzCSAKzLjAw8K5koC6YBSJW4rMW4TBMp2N6DuF9fAGEEYQAeGMQitWKy1cAAAAASUVORK5CYII=);
+
+  -webkit-appearance: initial;
+  -webkit-align-items: center;
+  -webkit-rtl-ordering: logical;
+  white-space: pre;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+
+  &.small {
+    height: auto;
+    padding: 9px 15px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAUBAMAAACHR/vJAAAAIVBMVEUAAADPz8/7+/ucnJyrq6vx8fGzs7OioqLd3d2/v7/o6Ohi1RgEAAAAAXRSTlMAQObYZgAAADtJREFUGNNjIAswCqAJNFug8rkMhRegCIRP4CxFEXBTYEpBERBiYFAkbDN+LQhDMa1FOAzd6ZieowwAAKD/CD2AY/JcAAAAAElFTkSuQmCC);
+  }
+
+}
+
+
+
+/**
+ * Actions
+ */
+.form-actions {
+  text-align: center;
+}
+
+/**
+ * Help
+ */
+.help-block {
+  font-size: @component-font-size-base;
+  margin-bottom: 5px;
+  color: inherit;
+}
+
+
+/*
+  Checkboxes & Radios
+==================================================== */
+
+.check,
+.radio {
+  margin-bottom: 12px;
+  padding-left: 32px;
+  position: relative;
+  .transition(color .25s linear);
+  font-size: ceil(@component-font-size-base * 0.933); // ~14px
+  line-height: 1.5; // 21px;
+  
+  input {
+    outline: none !important;
+    display: none;
+  }
+
+  .icons {
+    background-color: @gray-light;
+    border-radius: @border-radius-base;
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    text-align: center;
+    line-height: 21px;
+    font-size: 20px;
+    cursor: pointer;    
+    .transition(color .25s linear);
+
+    .icon {
+      background-color: transparent;
+      color: @inverse;
+      display: block;
+      margin: 0;
+      font-size: .82em;
+      height: 20px;
+      padding: 0;
+      position: absolute;
+      left: 4px;
+      top: 0;
+      .opacity(0);
+    }
+  }
+
+  input[type="checkbox"]:checked+span{
+    background-color: @primary;
+    .icon {
+      .opacity(1);
+    }
+  }
+
+  &.disabled {
+    cursor: default;
+    color: mix(@gray-light, white, 38%);
+
+    .icons {
+      color: mix(@gray-light, white, 38%);
+    }
+    .first-icon {
+      .opacity(1);
+    }
+    .second-icon {
+      .opacity(0);
+    }
+    &.checked {
+      .icons {
+        color: mix(@gray-light, white, 38%);
+      }
+      .first-icon {
+        .opacity(0);
+      }
+      .second-icon {
+        .opacity(1);
+        color: mix(@gray-light, white, 38%);
+      }
+    }
+  }
+
+  &.primary {
+    .icons {
+      color: @primary;
+    }
+    
+    &.checked {
+      color: @secondary;
+
+      .icons {
+        color: @secondary;
+      }
+    }
+
+    &.disabled {
+      cursor: default;
+      color: @gray-light;
+
+      .icons {
+        color: @gray-light;
+      }
+      &.checked {
+        .icons {
+          color: @gray-light;
+        }
+      }
+    }
+  }
+}
+
+.radio {
+  .icons {
+    border-radius: 20px;
+
+    .icon {
+      background-color: transparent;
+      background-color: @inverse;
+      border-radius: 20px;
+      display: block;
+      margin: 0;
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      border: 3px solid @inverse;
+      .opacity(1);
+    }
+
+  }
+
+    &:hover {
+     .transition(color .25s linear);
+      .icon {
+        background-color: @gray-light;
+      }
+    }
+
+    input[type="radio"]:checked+span{
+      background-color: @primary;
+      .icon {
+        background-color: @primary;
+        .opacity(1);
+      }
+    }
+}
+
+.radio + .radio,
+.check + .check {
+  margin-top: 10px;
+}

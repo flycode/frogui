@@ -1,0 +1,44 @@
+/*
+  Typography
+==================================================== */
+
+/**
+ *  Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+  color: @headings-color;
+  
+  small {
+    color: @headings-small-color;
+  }
+  strong {
+    font-weight: @headings-strong-weight;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+h4,
+h5,
+h6 {
+  margin-top: (@line-height-computed / 2);
+  margin-bottom: (@line-height-computed / 2);
+}
+
+h6 {
+  font-weight: normal;
+}
+
+h1 { font-size: 3.067em } // 46px
+h2 { font-size: 2.767em } // 42px
+h3 { font-size: 2.267em } // 34px
+h4 { font-size: 1.567em } // 25px
+h5 { font-size: 1.2em } // 18px 
+h6 { font-size: .93em } // 14px

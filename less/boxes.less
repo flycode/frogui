@@ -1,0 +1,62 @@
+/*
+  Boxes
+==================================================== */
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.box {
+  background-color: #FFF;
+  border-radius: @border-radius-base;
+  padding: 20px;
+  margin: 0 0 10px;
+}
+.box.shadow {
+  border: 1px solid #F7F7F7;
+  .box-shadow(0 1px 1px rgba(0, 0, 0, .1));
+}
+.box.transparent {
+  background-color: transparent;
+}
+[class*='box-'] {
+  padding: 12px 20px;
+}
+
+/**
+* Warn
+*/
+.box-warn {
+  background-color: @state-warning-bg;
+  color: @state-warning-text;
+  border: 1px solid @state-warning-border;
+}
+
+/**
+* Error
+*/
+.box-error {
+  background-color: @state-error-bg;
+  color: @state-error-text;
+  border: 1px solid @state-error-border;
+}
+
+/**
+* Info
+*/
+.box-info {
+  background-color: @state-info-bg;
+  color: @state-info-text;
+  border: 1px solid @state-info-border;
+}
+
+/**
+* Ok
+*/
+.box-ok {
+  background-color: @state-success-bg;
+  color: @state-success-text;
+  border: 1px solid @state-success-border;
+}
+
