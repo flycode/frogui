@@ -2,16 +2,16 @@
   "name": "Frogui",
   "version": "0.0.1",
   "description": "Minimal UI for responsive projects.",
-  "author": "Acamica",
+  "author": "Flycode",
   "contributors": [
     {
-      "name": "Nicolas Brizuela",
-      "email": "nico@gacamica.com"
+      "name": "Nico Brizuela",
+      "email": "nicobrizuela@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/acamica/frogui.git"
+    "url": "https://github.com/flycode/frogui.git"
   },
   "devDependencies": {
     "gulp": "~3.5.6",
